@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    margin: 0 auto;
+    padding: 0 10%;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000000;
+}
+.container nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+nav span{
+    font-size: 2rem;
+    color: white;
+}
+nav span b{
+    color:#02FE0A;
+    font-size: 3rem;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+.menu ul li{
+    padding: 0 10%;
+}
+
+.menu ul li a{
+    color: rgb(88, 87, 87);
+}
+
+.menu ul li a:hover{
+    font-weight: bold;
+    font-size: bold;
+    font-size: 2rem;
+    color: white;
+    transition-duration: 1s;
+    text-decoration: underline;
+}
+
+.btn-menu a{
+    font-size: 1.6rem;
+    background-color: #02FE0A;
+    padding: 5% 10%;
+    text-align: center;
+    border-radius: 30px;
+    font-weight: bold;
+    color: black;
+}
+.btn-menu a:hover{
+    color: white;
+    transition: all 2s;
+}
+.main-digital{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+.texto-primeiro h1{
+    color: white;
+    font-size: 3rem;
+}
+.texto-primeiro span{
+    color: #02FE0A;
+}
+
+.texto-primeiro h6{
+    color: rgb(162, 167, 167);
+    padding-right: 40%;
+    font-size: 20px;
+    opacity: 60%;
+}
+.texto-primeiro .btn-contato{
+    margin: 3% 0;
+}
+.texto-primeiro .btn-contato a{
+    background-color: #02FE0A;
+    padding: 10px 20px ;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+.imagem1 img{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    animation: flutuar 1s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+
+    100%{
+        top: 30px;
+    }
+}
+
+/*Fim da primeira section*/
+
+.texto-unico h2 {
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 5%;
+}
+
+.texto-unico h2 span{
+    color: #02FE0A;
+}
+
+.especialidades{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 5%;
+}
+
+.especialidades i{
+    font-size: 8rem;
+    color: #02FE0A;
+    
+}
+
+.especialidades h3{
+    font-size: 2rem;
+}
+
+.especialidades .loja-online{
+    margin: 0 10%;
+}
+
+.especialidades p{
+    margin-top: 5%;
+}
+
+/*Fim da segunda section*/
+
+.terceira-section{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.terceira-section .imagem{
+    margin: 10% 0;
+    height: 80vh;
+    width: 200%;
+    background-image: url(imagem/IMG-20200329-WA0003.jpg);
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.apresentacao {
+    padding: 0 10%;
+}
+
+.apresentacao h2{
+    font-size: 3rem;
+}
+.apresentacao h2 span{
+    color: #02FE0A;
+}
+
+.redes-socias button {
+    margin-top: 5%;
+    font-size: 2.5rem;
+    background-color: #02FE0A;
+    width: 60px;
+    height: 60px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+}
+
+.port{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+.port span{
+    color:#02FE0A ;
+}
+
+.projeto{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projeto .projeto1{
+    background-color: #02FE0A;
+    height: 80vh;
+    width: 30%;
+    background-image: url(imagem/imagem.jpg);
+    background-position: 100% 0%;
+    background-size: cover;
+    border-radius: 20px;
+    transition: 5s;
+    cursor: pointer;
+    position: relative;
+}
+
+.projeto .projeto1:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#0a070786;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0;
+}
+.overlay:hover{
+    opacity: 1;
+}
+
+.formulario-texto{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.formulario-texto span{
+    color: #02FE0A;
+}
+
+.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgb(65, 63, 63);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #02FE0A;
+    color: #000000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .5s;
+}
+
+form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #02FE0A;
+    transform: scale(1.05);
+}
+
+.redes-socias a b{
+    display: none;
+}
+.rodape-rodape{
+    border-bottom: 2px solid #02FE0A;
+}
+.rodape-rodape{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo span{
+    font-size: 2rem;
+    color: white;
+    padding: 10% 0;
+}
+
+.logo b{
+    color: #02FE0A;
+}
+
+.redes-socias{
+    font-size: 2rem;
+}
+
+.redes-socias a i{
+    color: white;
+
+}
+.redes-socias i{
+    color: #000000;
+}
+
+.conta{
+    margin: 2% 0;
+}
+
+.conta p a{
+    color: white;
+    font-size: 1.5rem;
+}
+.conta p i{
+    color: #02FE0A;
+    font-size: 30px;
+}
